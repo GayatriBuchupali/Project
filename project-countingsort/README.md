@@ -1,19 +1,9 @@
-# CompSt 751 Group Project
 
 ## Name
 
 Please put your current or desired project name here.
 
 Improving counting sort algorithm via data locality
-
-## People
-
-Please list all the team members with name, github username and email,e.g. 
-John Boyland, @boyland, boyland@uwm.edu
-
-Gayatri Buchupalli, @GayatriBuchupalli, buchupa2@uwm.edu
-Sushma Karri, @Sushmakarri, karris@uwm.edu
-Anutejaswi Sunkara, @anutejaswisunkara, asunkara@uwm.edu
 
 ## Paper
 
