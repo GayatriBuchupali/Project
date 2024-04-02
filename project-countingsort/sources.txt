@@ -1,0 +1,30 @@
+The below mentioned two algorithms are taken from our research paper:
+
+Algorithm 1: CountingSort algorithm 
+
+void countingsort(int arr[], int n) {
+ int output[n+1];
+ // getmax() returns the greatest value from $arr$
+ int r = getMax(arr, n);
+ int count[r+1];
+ for(int i = 0; i<=r; i++)
+ count[i] = 0;
+ for(int i = 0; i < n; i++)
+ count[arr[i]]++;
+ for(int i = 1; i<=r; i++)
+ count[i] += count[i-1];
+ for(int i = n-1; i>=0; i--) {
+ output[count[arr[i]]] = arr[i];
+ count[arr[i]] -= 1; }
+ for(int i = 0; i<n; i++)
+ arr[i] = output[i]; }
+ 
+ Algorithm 2: Modified Version of Quicksort Algorithm
+ 
+void quicksort_modified(int arr[], int low, int high, int maxValue, int minValue) {
+while ((low < high) && (maxValue- minValue + high - low > C))
+{
+int pivot = partition(arr, low, high);
+int midValue = arr[pivot];
+quicksort_modified(arr, low,pivot - 1, midValue,minValue);
+quicksort_modified(arr, pivot + 1,high, maxValue,midValue);}}
